@@ -1,0 +1,19 @@
+/* Colors */
+@use "sass:color" as scolor;
+
+$colors: (
+  black: #000000,
+  white: #ffffff,
+  razzmatazz: #E10856,
+  eerie: #1D1D1D,
+);
+
+@function color($key, $new-alpha: 1) {
+  @if map-has-key($colors, $key) {
+    $color: map-get($colors, $key);
+    @return scolor.adjust($color, $alpha: $new-alpha);
+  }
+
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}

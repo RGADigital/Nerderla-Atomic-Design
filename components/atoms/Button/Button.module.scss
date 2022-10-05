@@ -1,0 +1,50 @@
+.button {
+    min-width: 288px;
+    padding: 16px;
+    border-radius: 40px;
+    color: color(white);
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+    box-shadow: 0px 16px 16px 4px rgba(0, 0, 0, 0.12);
+    background-color: transparent;
+    &.primary {
+        background-color: color(razzmatazz);
+        &:hover {
+            background-color: darken(color(razzmatazz), 8%);
+        }
+    }
+    &.secondary {
+        border: 1px solid color(razzmatazz);
+        background-color: color(eerie);
+        &:hover {
+            background-color: lighten(color(eerie), 6%);
+        }
+    }
+    &.secondary-white {
+        border: 1px solid color(white);
+        background-color: color(eerie);
+        &:hover {
+            background-color: lighten(color(eerie), 6%);
+        }
+    }
+    &.secondary-gradient {
+        position: relative;
+        background-color: #1d1d1d;
+        &:hover {
+            background: rgba(44, 44, 44, 0.3);
+        }
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: calc(100% + 2px);
+            height: calc(100% + 2px);
+            border-radius: 40px;
+            background: linear-gradient(-45deg, #0FEFFD 30%, #FF00F5 100%, #0FEFFD 22%);
+            z-index: -1;
+            top: -1px;
+            left: -1px;
+        }
+    }
+}
