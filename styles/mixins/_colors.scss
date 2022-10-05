@@ -6,6 +6,7 @@ $colors: (
   white: #ffffff,
   razzmatazz: #E10856,
   eerie: #1D1D1D,
+  teal: #0FEFFD,
 );
 
 @function color($key, $new-alpha: 1) {

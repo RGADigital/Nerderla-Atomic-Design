@@ -5,8 +5,14 @@ import styles from './Button.module.scss';
 
 const cx = classNames.bind(styles);
 
-const Button = ({ label, type = 'primary', children, ...props }) => (
-  <button {...props} className={cx('button', type)}>{label || children}</button>
+const Button = ({
+  label,
+  type = 'primary',
+  children,
+  onClick,
+  ...props 
+}) => (
+  <button {...props} onClick={onClick} className={cx('button', type)}>{label || children}</button>
 );
 
 Button.defaultProps = {
@@ -16,6 +22,7 @@ Button.defaultProps = {
 
 Button.propTypes = {
   title: PropTypes.string,
-  type: PropTypes.oneOf(['primary', 'secondary', 'secondary-white', 'secondary-gradient'])
+  type: PropTypes.oneOf(['primary', 'secondary', 'secondary-white', 'secondary-gradient']),
+  onClick: PropTypes.func
 };
 export default Button;

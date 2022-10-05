@@ -20,7 +20,7 @@ module.exports = {
         {
           loader: 'sass-loader',
           options: {
-            additionalData: '@import "styles/styles.scss";'
+           additionalData: '@import "styles/styles.scss";@import "styles/globals.scss";'
           }
         }
       ]
