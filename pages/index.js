@@ -1,9 +1,119 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.scss'
-import Button from '../components/atoms/Button';
+import Head from "next/head";
+import styles from "../styles/Home.module.scss";
+import { FeaturedMovies, MoviesGallery } from "../components/organisms";
+import { SubTitle } from "../components/atoms";
 
 export default function Home() {
+  const movies = [
+    {
+      title: "Godzilla vs. Kong",
+      lead: "In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.",
+      tag: "Science Fiction",
+      image:
+        "https://cdnuploads.aa.com.tr/uploads/Contents/2022/07/12/thumbs_b_c_622024c2110fd36134d3dfe8c3500a78.jpg?v=210432",
+      rate: 4,
+      featured: true,
+    },
+    {
+      title: "Godzilla vs. Kong",
+      lead: "In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.",
+      tag: "Science Fiction",
+      image:
+        "https://cdnuploads.aa.com.tr/uploads/Contents/2022/07/12/thumbs_b_c_622024c2110fd36134d3dfe8c3500a78.jpg?v=210432",
+      rate: 2,
+      featured: true,
+    },
+    {
+      title: "Godzilla vs. Kong",
+      lead: "In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.",
+      tag: "Science Fiction",
+      image:
+        "https://cdnuploads.aa.com.tr/uploads/Contents/2022/07/12/thumbs_b_c_622024c2110fd36134d3dfe8c3500a78.jpg?v=210432",
+      rate: 1,
+      featured: true,
+    },
+    {
+      title: "Godzilla vs. Kong",
+      lead: "In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.",
+      tag: "Science Fiction",
+      image:
+        "https://cdnuploads.aa.com.tr/uploads/Contents/2022/07/12/thumbs_b_c_622024c2110fd36134d3dfe8c3500a78.jpg?v=210432",
+      rate: 1,
+    },
+    {
+      title: "Godzilla vs. Kong",
+      lead: "In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.",
+      tag: "Science Fiction",
+      image:
+        "https://cdnuploads.aa.com.tr/uploads/Contents/2022/07/12/thumbs_b_c_622024c2110fd36134d3dfe8c3500a78.jpg?v=210432",
+      rate: 1,
+    },
+    {
+      title: "Godzilla vs. Kong",
+      lead: "In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.",
+      tag: "Science Fiction",
+      image:
+        "https://cdnuploads.aa.com.tr/uploads/Contents/2022/07/12/thumbs_b_c_622024c2110fd36134d3dfe8c3500a78.jpg?v=210432",
+      rate: 1,
+    },
+    {
+      title: "Godzilla vs. Kong",
+      lead: "In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.",
+      tag: "Science Fiction",
+      image:
+        "https://cdnuploads.aa.com.tr/uploads/Contents/2022/07/12/thumbs_b_c_622024c2110fd36134d3dfe8c3500a78.jpg?v=210432",
+      rate: 1,
+    },
+    {
+      title: "Godzilla vs. Kong",
+      lead: "In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.",
+      tag: "Science Fiction",
+      image:
+        "https://cdnuploads.aa.com.tr/uploads/Contents/2022/07/12/thumbs_b_c_622024c2110fd36134d3dfe8c3500a78.jpg?v=210432",
+      rate: 1,
+    },
+    {
+      title: "Godzilla vs. Kong",
+      lead: "In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.",
+      tag: "Science Fiction",
+      image:
+        "https://cdnuploads.aa.com.tr/uploads/Contents/2022/07/12/thumbs_b_c_622024c2110fd36134d3dfe8c3500a78.jpg?v=210432",
+      rate: 1,
+    },
+    {
+      title: "Godzilla vs. Kong",
+      lead: "In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.",
+      tag: "Science Fiction",
+      image:
+        "https://cdnuploads.aa.com.tr/uploads/Contents/2022/07/12/thumbs_b_c_622024c2110fd36134d3dfe8c3500a78.jpg?v=210432",
+      rate: 1,
+    },
+    {
+      title: "Godzilla vs. Kong",
+      lead: "In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.",
+      tag: "Science Fiction",
+      image:
+        "https://cdnuploads.aa.com.tr/uploads/Contents/2022/07/12/thumbs_b_c_622024c2110fd36134d3dfe8c3500a78.jpg?v=210432",
+      rate: 1,
+    },
+    {
+      title: "Godzilla vs. Kong",
+      lead: "In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.",
+      tag: "Science Fiction",
+      image:
+        "https://cdnuploads.aa.com.tr/uploads/Contents/2022/07/12/thumbs_b_c_622024c2110fd36134d3dfe8c3500a78.jpg?v=210432",
+      rate: 1,
+    },
+    {
+      title: "Godzilla vs. Kong",
+      lead: "In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.",
+      tag: "Science Fiction",
+      image:
+        "https://cdnuploads.aa.com.tr/uploads/Contents/2022/07/12/thumbs_b_c_622024c2110fd36134d3dfe8c3500a78.jpg?v=210432",
+      rate: 1,
+    },
+  ];
+
   return (
     <div className={styles.container}>
       <Head>
@@ -13,24 +123,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Example
-        </h1>
-        <Button>Example</Button>
+        <FeaturedMovies movies={movies.filter((movie) => movie.featured)} />
+        <div className={styles["new-releases"]}>
+          <SubTitle>{"New releases >"}</SubTitle>
+        </div>
+        <MoviesGallery movies={movies.filter((movie) => !movie.featured)} />
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
-  )
+  );
 }
