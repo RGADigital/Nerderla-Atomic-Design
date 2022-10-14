@@ -7,7 +7,7 @@ import { MovieCard } from "../../molecules";
 
 const cx = classNames.bind(styles);
 
-const MoviesGallery = ({ title, movies }) => (
+const MoviesGallery = ({ movies }) => (
   <div className={cx("container")}>
     {movies.map((movie) => (
       <MovieCard key={uuid()} {...movie} />
@@ -16,10 +16,10 @@ const MoviesGallery = ({ title, movies }) => (
 );
 
 MoviesGallery.defaultProps = {
-  title: "",
+  movies: [],
 };
 
 MoviesGallery.propTypes = {
-  title: PropTypes.string,
+  movies: PropTypes.object,
 };
 export default MoviesGallery;
