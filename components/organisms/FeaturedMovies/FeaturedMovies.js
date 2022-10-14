@@ -4,6 +4,7 @@ import Glide from "@glidejs/glide";
 import classNames from "classnames/bind";
 import styles from "./FeaturedMovies.module.scss";
 import { FeaturedMovie } from "../../molecules";
+import { Icon } from "../../atoms";
 
 const cx = classNames.bind(styles);
 
@@ -48,12 +49,12 @@ const FeaturedMovies = ({ movies = [] }) => {
   );
 
   const getArrows = () => (
-    <div class="glide__arrows" data-glide-el="controls">
-      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-        prev
+    <div className="glide__arrows" data-glide-el="controls">
+      <button className={cx('arrow_button', 'arrow-left') + " glide__arrow glide__arrow--left"} data-glide-dir="<">
+        <Icon type="chevron-left"/>
       </button>
-      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-        next
+      <button className={cx('arrow_button') + " glide__arrow glide__arrow--right"} data-glide-dir=">">
+        <Icon type="chevron-right"/>
       </button>
     </div>
   );

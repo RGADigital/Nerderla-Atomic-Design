@@ -20,6 +20,6 @@ MoviesGallery.defaultProps = {
 };
 
 MoviesGallery.propTypes = {
-  movies: PropTypes.object,
+  movies: PropTypes.arrayOf(PropTypes.object),
 };
 export default MoviesGallery;

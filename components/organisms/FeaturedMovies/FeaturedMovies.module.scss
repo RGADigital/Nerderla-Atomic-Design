@@ -7,3 +7,15 @@
     bottom: 5%;
     left: 50%;
 }
+
+.arrow_button {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.arrow-left {
+        margin-left: 4em;
+    }
+}

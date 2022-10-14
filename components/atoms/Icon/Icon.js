@@ -4,7 +4,7 @@ import classNames from "classnames/bind";
 import styles from "./Icon.module.scss";
 
 const cx = classNames.bind(styles);
-const TYPES = [
+export const ICON_TYPES = [
   "account",
   "calendar",
   "chevron-down",
@@ -36,6 +36,6 @@ Icon.defaultProps = {
 };
 
 Icon.propTypes = {
-  type: PropTypes.oneOf(TYPES),
+  type: PropTypes.oneOf(ICON_TYPES),
 };
 export default Icon;

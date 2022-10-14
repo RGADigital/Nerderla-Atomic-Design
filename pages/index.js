@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import { FeaturedMovies, MoviesGallery } from "../components/organisms";
 import { SubTitle } from "../components/atoms";
+import { Nav } from "../components/organisms";
 
 export default function Home() {
   const movies = [
@@ -113,7 +114,24 @@ export default function Home() {
       rate: 1,
     },
   ];
-
+  const navItems = [
+    {
+      icon: 'home',
+      href: '/'
+    },
+    {
+      icon: 'movie',
+      href: '/'
+    },
+    {
+      icon: 'tv',
+      href: '/'
+    },
+    {
+      icon: 'star-stroke',
+      href: '/'
+    }
+  ];
   return (
     <div className={styles.container}>
       <Head>
@@ -123,6 +141,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <Nav navItems={navItems} />
         <FeaturedMovies movies={movies.filter((movie) => movie.featured)} />
         <div className={styles["new-releases"]}>
           <SubTitle>{"New releases >"}</SubTitle>

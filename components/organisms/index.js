@@ -6,3 +6,6 @@ export const FeaturedMovies = dynamic(() => import("./FeaturedMovies"), {
 export const MoviesGallery = dynamic(() => import("./MoviesGallery"), {
   ssr: false,
 });
+export const Nav = dynamic(() => import("../organisms/Nav"), {
+  ssr: false,
+});
