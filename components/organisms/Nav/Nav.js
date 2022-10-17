@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import styles from './Nav.module.scss';
 import { NavItem } from '../../molecules';
-import * as logo from './assets/logo.svg';
+import logo from './assets/logo.svg';
 
 const cx = classNames.bind(styles);
 
