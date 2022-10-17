@@ -1,10 +1,10 @@
 import React from 'react';
 
-import NavItem from '../../components/atoms/NavItem';
+import NavItem from '../../components/molecules/NavItem';
 
 export default {
   component: NavItem,
-  title: 'atoms/NavItem',
+  title: 'molecules/NavItem',
 };
 
 const Template = (args) => <NavItem {...args} />;

@@ -49,7 +49,7 @@ const FeaturedMovies = ({ movies = [] }) => {
   );
 
   const getArrows = () => (
-    <div className="glide__arrows" data-glide-el="controls">
+    <div className={cx('arrows')+" glide__arrows"} data-glide-el="controls">
       <button
         className={
           cx("arrow_button", "arrow-left") + " glide__arrow glide__arrow--left"

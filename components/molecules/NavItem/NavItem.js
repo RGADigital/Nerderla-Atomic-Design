@@ -28,7 +28,7 @@ NavItem.defaultProps = {
 NavItem.propTypes = {
   href: PropTypes.string,
   icon: PropTypes.oneOf(ICON_TYPES),
-  image: PropTypes.string,
+  image: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   className: PropTypes.string,
 };
 export default NavItem;
