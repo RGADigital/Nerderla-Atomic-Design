@@ -10,7 +10,7 @@ const cx = classNames.bind(styles);
 const MoviesGallery = ({ movies }) => (
   <div className={cx("container")}>
     {movies.map((movie) => (
-      <MovieCard key={uuid()} {...movie} />
+      <MovieCard key={uuid()} {...movie.fields} tag={movie.metadata.tags} />
     ))}
   </div>
 );

@@ -50,11 +50,19 @@ const FeaturedMovies = ({ movies = [] }) => {
 
   const getArrows = () => (
     <div className="glide__arrows" data-glide-el="controls">
-      <button className={cx('arrow_button', 'arrow-left') + " glide__arrow glide__arrow--left"} data-glide-dir="<">
-        <Icon type="chevron-left"/>
+      <button
+        className={
+          cx("arrow_button", "arrow-left") + " glide__arrow glide__arrow--left"
+        }
+        data-glide-dir="<"
+      >
+        <Icon type="chevron-left" />
       </button>
-      <button className={cx('arrow_button') + " glide__arrow glide__arrow--right"} data-glide-dir=">">
-        <Icon type="chevron-right"/>
+      <button
+        className={cx("arrow_button") + " glide__arrow glide__arrow--right"}
+        data-glide-dir=">"
+      >
+        <Icon type="chevron-right" />
       </button>
     </div>
   );
@@ -67,9 +75,9 @@ const FeaturedMovies = ({ movies = [] }) => {
     <div className={`glide ${cx("slider")}`} ref={sliderElement}>
       <div className="glide__track" data-glide-el="track">
         <ul className="glide__slides slides">
-          {movies.map((child, index) => (
-            <li key={index} className="glide__slide child" data-index={index}>
-              <FeaturedMovie {...child} />
+          {movies.map((movie, index) => (
+            <li key={index} className="glide__slide" data-index={index}>
+              <FeaturedMovie {...movie.fields} tag={movie.metadata.tags} />
             </li>
           ))}
         </ul>

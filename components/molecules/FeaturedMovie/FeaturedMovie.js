@@ -11,12 +11,12 @@ const FeaturedMovie = ({ title, lead, tag, image, rate }) => (
     className={cx("container")}
     style={{
       height: `${window.innerHeight}px`,
-      backgroundImage: `url(${image})`,
+      backgroundImage: `url(${image.fields.file.url})`,
     }}
   >
-    <Tag label={tag} />
+    <Tag label={tag.map((tag) => tag.sys.id.toUpperCase()).join(" ")} />
     <div className={cx("rate")}>
-      {[...Array(rate).keys()].map((number) => (
+      {[...Array(Number(rate)).keys()].map((number) => (
         <Icon key={number} type={"star-fill"} />
       ))}
     </div>
