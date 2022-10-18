@@ -42,8 +42,8 @@ const NavItem = ({ href, icon, image, className }) => (
 );
 
 NavItem.defaultProps = {
-  href: '/',
-  icon: 'home',
+  href: '',
+  icon: '',
   image: '',
   className: '',
 };

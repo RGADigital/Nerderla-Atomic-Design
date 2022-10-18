@@ -10,4 +10,7 @@ export default {
 const Template = (args) => <NavItem {...args} />;
 
 export const Default = Template.bind({});
-Default.args = NavItem.defaultProps;
+Default.args = {
+  icon: 'home',
+  href: '#'
+};
