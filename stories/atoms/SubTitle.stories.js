@@ -10,4 +10,6 @@ export default {
 const Template = (args) => <SubTitle {...args} />;
 
 export const Default = Template.bind({});
-Default.args = SubTitle.defaultProps;
+Default.args = {
+  children: 'Subtitle'
+};

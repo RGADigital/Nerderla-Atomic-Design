@@ -2,10 +2,33 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import styles from './NavItem.module.scss';
-import Icon, {ICON_TYPES} from '../../atoms/Icon';
+import Icon from '../../atoms/Icon';
 import Image from 'next/image';
 
 const cx = classNames.bind(styles);
+export const ICON_TYPES = [
+  "account",
+  "calendar",
+  "chevron-down",
+  "chevron-left",
+  "chevron-right",
+  "chevron-up",
+  "clock",
+  "close",
+  "expand",
+  "gallery",
+  "home",
+  "menu",
+  "minus",
+  "movie",
+  "pause",
+  "play",
+  "search",
+  "settings",
+  "star-fill",
+  "star-stroke",
+  "tv",
+];
 
 const NavItem = ({ href, icon, image, className }) => (
   <a className={cx('nav-item', className)} href={href}>
@@ -19,8 +42,8 @@ const NavItem = ({ href, icon, image, className }) => (
 );
 
 NavItem.defaultProps = {
-  href: '',
-  icon: '',
+  href: '/',
+  icon: 'home',
   image: '',
   className: '',
 };

@@ -10,4 +10,6 @@ export default {
 const Template = (args) => <Title {...args} />;
 
 export const Default = Template.bind({});
-Default.args = Title.defaultProps;
+Default.args = {
+  children: 'Title'
+};

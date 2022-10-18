@@ -10,4 +10,6 @@ export default {
 const Template = (args) => <Lead {...args} />;
 
 export const Default = Template.bind({});
-Default.args = Lead.defaultProps;
+Default.args = {
+  children: 'Lorem ipsum'
+};

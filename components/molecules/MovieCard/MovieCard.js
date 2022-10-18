@@ -10,10 +10,12 @@ const MovieCard = ({ title, tag, rate, image }) => (
   <div
     className={cx("container")}
     style={{
-      backgroundImage: `url(${image.fields.file.url})`,
+      backgroundImage: `url(${image?.fields?.file.url})`,
     }}
   >
-    <Tag label={tag.map((tag) => tag.sys.id.toUpperCase()).join(" ")} />
+    {tag && (
+      <Tag label={tag.map((tag) => tag.sys.id.toUpperCase()).join(" ")} />
+    )}
     <div className={cx("rate")}>
       {[...Array(Number(rate)).keys()].map((number) => (
         <Icon key={number} type={"star-fill"} />
@@ -25,6 +27,9 @@ const MovieCard = ({ title, tag, rate, image }) => (
 
 MovieCard.defaultProps = {
   title: "",
+  tag: '',
+  rate: '',
+  image: ''
 };
 
 MovieCard.propTypes = {
