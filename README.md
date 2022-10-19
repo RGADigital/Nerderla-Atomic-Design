@@ -1,34 +1,158 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<br />
+<p>
+  <img src="https://i.postimg.cc/MKD0dx8k/NERDEARLA-logos-04.png" alt="Logo" width="200">
+
+  <h3>NERDEAR.LA ATOMIC DESIGN WORKSHOP</h3>
+
+  <p>
+    <br />
+    <strong>Explore the docs »</strong>
+    <br />
+    <br />
+  </p>
+</p>
+
+<!-- TABLE OF CONTENTS -->
+
+## Table of Contents
+
+- [About the Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Environment Variables](#environment-variables)
+  - [Installation](#installation)
+  - [Run](#run)
+  - [Tools](#tools)
+- [Contributing and Workflow](#contributing-and-workflow)
+
+## Resources
+
+> \*Please ask for access to this resource with the team
+
+- [Figma](https://www.figma.com/file/KQqGzwaKUh4QLoGqlM19AT/Movie-app-Figma?node-id=468%3A973)
+
+### Built With
+
+- [ReactJS](https://reactjs.org/)
+- [SASS](https://nextjs.org/docs/basic-features/built-in-css-support#sass-support)
+- [CSS Modules](https://nextjs.org/docs/advanced-features/customizing-postcss-config#css-modules)
+- [NextJS](https://nextjs.org/)
+- [GraphQL](https://graphql.org/)
+- [Wordpress](https://wordpress.com/)
+
+<!-- GETTING STARTED -->
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running follow these simple steps.
 
-```bash
-npm run dev
-# or
+### Prerequisites
+
+A list of things that you need to install for run the project.
+
+- [Node LTS](https://nodejs.org/)
+
+- Yarn
+
+```sh
+brew install yarn
+```
+
+> If you're a Windows user,
+> [download the installer](https://yarnpkg.com/en/docs/install#windows-stable).
+
+### Environment Variables
+
+Environment variables are defined in
+[Dotenv](https://github.com/motdotla/dotenv) files. Dotenv is a zero-dependency
+module that loads environment variables from a `.env` file into `process.env`.
+
+For the build to run successfully, you will need to create a `.env` that
+contains the following data:
+
+```
+NEXT_PUBLIC_CF_SPACE_ID=
+NEXT_PUBLIC_CF_ENV=
+NEXT_PUBLIC_CF_DELIVERY_ACCESS_TOKEN=
+```
+
+> For security reasons, the specific values are not included in this README and
+> the files are not checked in to source control.
+
+### Installation
+
+1. Clone the repo
+
+```sh
+git clone https://github.com/RGADigital/Nerderla-Atomic-Design
+```
+
+2. Install NPM packages
+
+```sh
+yarn install
+```
+
+3. Start the server
+
+```sh
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Run
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- Storybooks To test all the components that are being used on the site, use
+  storybooks.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```
+$ yarn storybook
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Linting
 
-## Learn More
+```
+$ yarn lint
+```
 
-To learn more about Next.js, take a look at the following resources:
+- Development
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+$ yarn dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Production (with server)
 
-## Deploy on Vercel
+```
+$ yarn install
+$ yarn build
+$ yarn start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Opening in Development Container
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Open the cloned project in VS Code. Once you open it, you will see a popup with the text `Folder contains a Dev Container configuration file. Reopen folder to develop in a container.`, click the `Re-open in Container` button and a new Docker container will be created and dependencies will be automatically installed for you.
+
+### Tools
+
+- **ESLINT:**
+  [ESLINT](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- **JS:** ES6 compiled by [Babel](https://babeljs.io)
+- **Component Dev:** [Storybook](https://storybook.js.org/)
+- **Linting & Formatting:** [ESLint](https://eslint.org/),
+  [Prettier](https://prettier.io/docs/en/editors.html),
+  [Stylelint](https://stylelint.io/) and
+  [EditorConfig](https://editorconfig.org/).\*
+
+> \*It is strongly recommended that you integrate these tools into your editor
+> or IDE.
+
+## Contributing and Workflow
+
+This are our basics steps for start working in this project.
+
+1. Clone the Project
+2. Create your Feature branch from develop (`git checkout -b feature/___`)
+3. Commit your Changes (`git commit -m 'Add some feature'`)
+4. Push to the Branch (`git push origin feature/___`)
+5. Open a Merge Request
