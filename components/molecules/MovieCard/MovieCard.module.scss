@@ -12,7 +12,7 @@
     padding: 24px;
     width: 292px;
 
-    & > *:not(:last-child) {
+    > *:not(:last-child) {
         margin-bottom: 20px;
     }
 }

@@ -8,19 +8,21 @@ import logo from './assets/logo.svg';
 const cx = classNames.bind(styles);
 
 const Nav = ({ navItems }) => (
-  <nav className={cx('nav')}>
-    <NavItem href="/" image={logo} className={cx('main-logo')}/>
-    <div className={cx('nav-items')}>
-      {navItems.map((navItem, i) => <NavItem className={cx('nav-item')} key={i} {...navItem} />)}
-    </div>
-  </nav>
+    <nav className={cx('nav')}>
+        <NavItem href="/" image={logo} className={cx('main-logo')} />
+        <div className={cx('nav-items')}>
+            {navItems.map((navItem, i) => (
+                <NavItem className={cx('nav-item')} key={i} {...navItem} />
+            ))}
+        </div>
+    </nav>
 );
 
 Nav.defaultProps = {
-  navItems: [],
+    navItems: [],
 };
 
 Nav.propTypes = {
-  navItems: PropTypes.arrayOf(PropTypes.object),
+    navItems: PropTypes.arrayOf(PropTypes.object),
 };
 export default Nav;

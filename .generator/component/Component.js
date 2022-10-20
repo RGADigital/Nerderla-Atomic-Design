@@ -5,15 +5,13 @@ import styles from './Component.module.scss';
 
 const cx = classNames.bind(styles);
 
-const Component = ({ title }) => (
-  <div className={cx('container')}>{title}</div>
-);
+const Component = ({ title }) => <div className={cx('container')}>{title}</div>;
 
 Component.defaultProps = {
-  title: '',
+    title: '',
 };
 
 Component.propTypes = {
-  title: PropTypes.string,
+    title: PropTypes.string,
 };
 export default Component;

@@ -1,27 +1,29 @@
 .nav {
-    background: rgba(29, 29, 29, 0.5);
-    box-shadow: 0px 40px 40px 8px rgba(0, 0, 0, 0.16);
     backdrop-filter: blur(12px);
-    width: 56px;
-    height: 100vh;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: z-index(nav);
+    background: rgba(29, 29, 29, 0.5);
+    box-shadow: 0 40px 40px 8px rgba(0, 0, 0, 0.16);
     flex-direction: column;
+    height: 100vh;
     justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 56px;
+    z-index: z-index(nav);
+
     .main-logo {
-        margin-top: 45px;
         display: block;
+        margin-top: 45px;
     }
+
     .nav-items {
-        height: calc(100% - 105px);
-        padding-top: 70px;
-        padding-bottom: 120px;
+        align-items: center;
         display: flex;
         flex-direction: column;
-        list-style: none;
+        height: calc(100% - 105px);
         justify-content: space-around;
-        align-items: center;
+        list-style: none;
+        padding-bottom: 120px;
+        padding-top: 70px;
     }
 }

@@ -1,3 +1,3 @@
 export const CONTENT_TYPES = {
-  MOVIE: "movie",
+    MOVIE: 'movie',
 };

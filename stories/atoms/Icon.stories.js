@@ -3,8 +3,8 @@ import React from 'react';
 import Icon from '../../components/atoms/Icon';
 
 export default {
-  component: Icon,
-  title: 'atoms/Icon',
+    component: Icon,
+    title: 'atoms/Icon',
 };
 
 const Template = (args) => <Icon {...args} />;

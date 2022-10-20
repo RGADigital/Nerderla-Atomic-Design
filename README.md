@@ -16,30 +16,30 @@
 
 ## Table of Contents
 
-- [About the Project](#about-the-project)
-  - [Built With](#built-with)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Environment Variables](#environment-variables)
-  - [Installation](#installation)
-  - [Run](#run)
-  - [Tools](#tools)
-- [Contributing and Workflow](#contributing-and-workflow)
+-   [About the Project](#about-the-project)
+    -   [Built With](#built-with)
+-   [Getting Started](#getting-started)
+    -   [Prerequisites](#prerequisites)
+    -   [Environment Variables](#environment-variables)
+    -   [Installation](#installation)
+    -   [Run](#run)
+    -   [Tools](#tools)
+-   [Contributing and Workflow](#contributing-and-workflow)
 
 ## Resources
 
 > \*Please ask for access to this resource with the team
 
-- [Figma](https://www.figma.com/file/KQqGzwaKUh4QLoGqlM19AT/Movie-app-Figma?node-id=468%3A973)
+-   [Figma](https://www.figma.com/file/KQqGzwaKUh4QLoGqlM19AT/Movie-app-Figma?node-id=468%3A973)
 
 ### Built With
 
-- [ReactJS](https://reactjs.org/)
-- [SASS](https://nextjs.org/docs/basic-features/built-in-css-support#sass-support)
-- [CSS Modules](https://nextjs.org/docs/advanced-features/customizing-postcss-config#css-modules)
-- [NextJS](https://nextjs.org/)
-- [GraphQL](https://graphql.org/)
-- [Wordpress](https://wordpress.com/)
+-   [ReactJS](https://reactjs.org/)
+-   [SASS](https://nextjs.org/docs/basic-features/built-in-css-support#sass-support)
+-   [CSS Modules](https://nextjs.org/docs/advanced-features/customizing-postcss-config#css-modules)
+-   [NextJS](https://nextjs.org/)
+-   [GraphQL](https://graphql.org/)
+-   [Wordpress](https://wordpress.com/)
 
 <!-- GETTING STARTED -->
 
@@ -51,9 +51,9 @@ To get a local copy up and running follow these simple steps.
 
 A list of things that you need to install for run the project.
 
-- [Node LTS](https://nodejs.org/)
+-   [Node LTS](https://nodejs.org/)
 
-- Yarn
+-   Yarn
 
 ```sh
 brew install yarn
@@ -102,26 +102,26 @@ yarn dev
 
 ### Run
 
-- Storybooks To test all the components that are being used on the site, use
-  storybooks.
+-   Storybooks To test all the components that are being used on the site, use
+    storybooks.
 
 ```
 $ yarn storybook
 ```
 
-- Linting
+-   Linting
 
 ```
 $ yarn lint
 ```
 
-- Development
+-   Development
 
 ```
 $ yarn dev
 ```
 
-- Production (with server)
+-   Production (with server)
 
 ```
 $ yarn install
@@ -135,14 +135,14 @@ Open the cloned project in VS Code. Once you open it, you will see a popup with 
 
 ### Tools
 
-- **ESLINT:**
-  [ESLINT](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- **JS:** ES6 compiled by [Babel](https://babeljs.io)
-- **Component Dev:** [Storybook](https://storybook.js.org/)
-- **Linting & Formatting:** [ESLint](https://eslint.org/),
-  [Prettier](https://prettier.io/docs/en/editors.html),
-  [Stylelint](https://stylelint.io/) and
-  [EditorConfig](https://editorconfig.org/).\*
+-   **ESLINT:**
+    [ESLINT](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+-   **JS:** ES6 compiled by [Babel](https://babeljs.io)
+-   **Component Dev:** [Storybook](https://storybook.js.org/)
+-   **Linting & Formatting:** [ESLint](https://eslint.org/),
+    [Prettier](https://prettier.io/docs/en/editors.html),
+    [Stylelint](https://stylelint.io/) and
+    [EditorConfig](https://editorconfig.org/).\*
 
 > \*It is strongly recommended that you integrate these tools into your editor
 > or IDE.

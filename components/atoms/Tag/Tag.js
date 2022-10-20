@@ -6,14 +6,14 @@ import styles from './Tag.module.scss';
 const cx = classNames.bind(styles);
 
 const Tag = ({ label, children }) => (
-  <div className={cx('tag')}>{(label || children)}</div>
+    <div className={cx('tag')}>{label || children}</div>
 );
 
 Tag.defaultProps = {
-  label: 'Tag Name',
+    label: 'Tag Name',
 };
 
 Tag.propTypes = {
-  label: PropTypes.string,
+    label: PropTypes.string,
 };
 export default Tag;
