@@ -44,6 +44,14 @@ export default function Home({ movies }) {
                 <MoviesGallery
                     movies={movies.filter((movie) => !movie.fields.featured)}
                 />
+                <div className={styles['new-releases']}>
+                    <SubTitle maxLine={2}>{'Featured TV Shows'}</SubTitle>
+                    <Icon type={'chevron-right'} />
+                </div>
+                <MoviesGallery
+                    movies={movies.filter((movie) => !movie.fields.featured)}
+                    type="big"
+                />
             </main>
         </div>
     );

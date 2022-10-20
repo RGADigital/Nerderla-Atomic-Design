@@ -6,6 +6,9 @@ export const FeaturedMovie = dynamic(() => import('./FeaturedMovie'), {
 export const MovieCard = dynamic(() => import('./MovieCard'), {
     ssr: false,
 });
+export const MovieCardBig = dynamic(() => import('./MovieCardBig'), {
+    ssr: false,
+});
 export const NavItem = dynamic(() => import('./NavItem'), {
     ssr: false,
 });
